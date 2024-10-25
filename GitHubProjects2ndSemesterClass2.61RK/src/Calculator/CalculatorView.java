@@ -18,6 +18,7 @@ public class CalculatorView {
 	protected TextField txtCalc;
 	protected Button digits[] = new Button[10];
 	protected Button btnPlus;
+	protected Button btnMinus;
 	protected Button btnClear;
 	protected Button btnEquals;
 	
@@ -30,9 +31,11 @@ public class CalculatorView {
 		txtCalc.setDisable(true);
 		root.setTop(txtCalc);
 		
+		// Create a grid for the buttons
 		GridPane buttons = new GridPane();
 		root.setCenter(buttons);
 		
+		// Create the digit buttons
 		for (int i = 0; i < digits.length; i++) {
 			digits[i] = new Button(Integer.toString(i));
 		}
@@ -45,28 +48,36 @@ public class CalculatorView {
 			buttons.add(digits[i], (i-1) % 3, 2 - (i-1) / 3);
 		}		
 		
+		btnMinus = new Button("-");
+		buttons.add(btnMinus, 3, 0);
+		
 		btnPlus = new Button("+");
-		buttons.add(btnPlus, 3, 0);
+		buttons.add(btnPlus, 3, 1);
 		
 		btnClear = new Button("C");
-		buttons.add(btnClear, 3, 1);
+		buttons.add(btnClear, 3, 2);
 		
 		btnEquals = new Button("=");
-		buttons.add(btnEquals, 3, 2, 1, 2);
+		buttons.add(btnEquals, 3, 3, 1, 2);
 		
 		// Configure grid columns and rows to resize to available space
 		// See "GridPane" in the JavaFX API, section "Percentage Sizing"
 		ColumnConstraints cc = new ColumnConstraints();
-		cc.setPercentWidth(25);
+		cc.setPercentWidth(20);
 		buttons.getColumnConstraints().addAll(cc, cc, cc, cc);
 		RowConstraints rc = new RowConstraints();
-		rc.setPercentHeight(25);
+		rc.setPercentHeight(20);
 		buttons.getRowConstraints().addAll(rc, rc, rc, rc);
 		
 		Scene scene = new Scene(root);
 		scene.getStylesheets().add(getClass().getResource("Calculator.css").toExternalForm());
 		stage.setScene(scene);
-		stage.setTitle("Calculator");
+		stage.setTitle("CalculatorRK2.61");
+		
+		// Set the window size
+        stage.setWidth(300);
+        stage.setHeight(300);
+
 	}
 
 	public void start() {
