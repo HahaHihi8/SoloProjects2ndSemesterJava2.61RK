@@ -5,3 +5,5 @@ This project includes all tasks from my class WIBB 2.61 at FHNW 2024
 
 25.10.2024 / upload working Calculator (src/calculator)
 
+03.11.2024 / new uploads of src IPv6 V1.0 and EMailValidator V1.0
+
