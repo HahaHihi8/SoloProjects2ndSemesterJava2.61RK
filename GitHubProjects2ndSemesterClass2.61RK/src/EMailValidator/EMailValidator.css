@@ -1,0 +1,6 @@
+.emailOk {
+ -fx-text-fill: green;
+}
+.emailNotOk {
+ -fx-text-fill: red;
+}
