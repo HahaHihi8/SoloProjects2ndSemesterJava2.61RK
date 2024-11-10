@@ -49,6 +49,8 @@ public class PetApplicationView {
         stage.show();
     }
 
+    
+    
     private Pane createDataEntryPane() {
         GridPane pane = new GridPane();
         pane.setId("dataEntry");
@@ -69,17 +71,45 @@ public class PetApplicationView {
         return pane;
     }
 
+    
+    
+    
     private Pane createControlPane() {
         GridPane pane = new GridPane();
         pane.setId("controlArea");
-        pane.add(new Label("Control area"), 0, 0);
+        
+        // Verwende die deklarierten Buttons
+        pane.add(btnSave, 0, 0);
+        pane.add(btnDelete, 1, 0);
+        
         return pane;
     }
 
+    
+    
+    
+    
     private Pane createDataDisplayPane() {
         GridPane pane = new GridPane();
         pane.setId("dataDisplay");
-        pane.add(new Label("Data display area"), 0, 0);
+        
+        // Label Überschriften
+        Label lblIDTitle = new Label("ID:");
+        Label lblNameTitle = new Label("Name:");
+        Label lblSpeciesTitle = new Label("Species:");
+        Label lblGenderTitle = new Label("Gender:");
+
+        // Hinzufügen der Labels und den Anzeigefeldern für Pet-Daten
+        pane.add(lblIDTitle, 0, 0);
+        pane.add(lblDataID, 1, 0);
+        pane.add(lblNameTitle, 0, 1);
+        pane.add(lblDataName, 1, 1);
+        pane.add(lblSpeciesTitle, 0, 2);
+        pane.add(lblDataSpecies, 1, 2);
+        pane.add(lblGenderTitle, 0, 3);
+        pane.add(lblDataGender, 1, 3);
+        
+    
         return pane;
     }
 }
