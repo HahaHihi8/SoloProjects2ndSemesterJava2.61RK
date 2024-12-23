@@ -4,6 +4,6 @@
 }
 
 .button {
-	-fx-mid-width: 30px;
-	-fx-mid-height: 30px;
+	-fx-pref-width: 30px;
+	-fx-pref-height: 30px;
 }
