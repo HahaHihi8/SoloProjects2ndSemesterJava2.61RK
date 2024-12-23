@@ -17,8 +17,6 @@ public class MineSweeperMain extends Application {
 		view = new MineSweeperView(primaryStage, model);
 		controller = new MineSweeperController(model, view); //Fehler, da noch kein Konstruktor in der Klasse 
 		view.start(); //Start-Methode wird im View geschrieben
-		
-
 	}
 
 	public static void main(String[] args) {

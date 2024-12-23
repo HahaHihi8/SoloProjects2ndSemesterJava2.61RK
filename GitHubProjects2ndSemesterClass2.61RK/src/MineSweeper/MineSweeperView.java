@@ -71,8 +71,8 @@ public class MineSweeperView {
 	protected void newGame(int width, int height) {
 		gameGrid.getChildren().clear(); //löscht alte Elemente
 		buttons = new Button[height][width]; //height = Höhe / width = Spalte
-		for (int row= 1; row < height; row++) {
-			for (int col = 1; col < width; col++) {
+		for (int row = 0; row < height; row++) {
+			for (int col = 0; col < width; col++) {
                 Button btn = new Button();
                 buttons[row][col] = btn;
                 gameGrid.add(btn, col, row); // add-Funktion fordert zuerst Spalte und dann Zeile
