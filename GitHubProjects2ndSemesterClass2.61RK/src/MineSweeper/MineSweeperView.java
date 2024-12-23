@@ -1,6 +1,8 @@
 package MineSweeper;
 
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
@@ -76,5 +78,13 @@ public class MineSweeperView {
                 gameGrid.add(btn, col, row); // add-Funktion fordert zuerst Spalte und dann Zeile
 			}
 		}	
+	}
+
+	public void showBoom() {
+		Alert alert = new Alert(AlertType.ERROR);
+		alert.setTitle("Boom!!!");
+		alert.setHeaderText("You hit a mine!");
+		alert.setContentText("Game Over, you have been blown up!");
+		alert.showAndWait();
 	}
 }
