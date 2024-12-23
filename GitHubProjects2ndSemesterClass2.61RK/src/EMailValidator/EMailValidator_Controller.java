@@ -9,15 +9,17 @@ public class EMailValidator_Controller {
         this.view = view;
 
         view.txtEmail.textProperty().addListener(
-            (observable, oldValue, newValue) -> validateEmailAddress(newValue));
+            (observable, oldValue, newValue) -> validateEmailAddress(newValue)); //Lambda expression
     }
 
     private void validateEmailAddress(String newValue) {
         boolean valid = false;
-
+  // Split the email address into two parts at the "@" symbol
         String[] addressParts = newValue.split("@");
-        if (addressParts.length == 2 && addressParts[0].length() > 0 && addressParts[1].length() > 0) {
+        if (addressParts.length == 2 && !addressParts[0].isEmpty() && !addressParts[1].isEmpty()) {
+ // Mail darf nicht mit einem Punkt enden (darf nicht das Trennzeichen sein!)
             if (addressParts[1].charAt(addressParts[1].length() - 1) != '.') {
+ // Split bei "." ABER da "." ein Regular Expressions ist, muss es escaped werden (. hat eine Bedeutung in Regex)
                 String[] domainParts = addressParts[1].split("\\.");
                 if (domainParts.length >= 2) {
                     valid = true;

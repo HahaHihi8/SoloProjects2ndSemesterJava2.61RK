@@ -22,6 +22,7 @@ public class EMailValidator_View {
         txtEmail = new TextField();
         root.add(txtEmail, 0, 0);
         Scene scene = new Scene(root);
+        scene.getStylesheets().add(getClass().getResource("EMailValidator.css").toExternalForm());
         primaryStage.setScene(scene);
         
     }
