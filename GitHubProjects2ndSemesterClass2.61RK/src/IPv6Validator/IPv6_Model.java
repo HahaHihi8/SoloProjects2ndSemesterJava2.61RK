@@ -10,7 +10,6 @@ public class IPv6_Model {
         if (address == null || address.isEmpty()) {
             return false;
         }
-
         // 2. Split the address into segments by ":"
         String[] segments = address.split(":");
 
@@ -18,30 +17,24 @@ public class IPv6_Model {
         if (segments.length != 8) {
             return false;
         }
-
         // 4. Check each segment
         for (String segment : segments) {
             // Each segment should have 1 to 4 characters
             if (segment.length() < 1 || segment.length() > 4) {
                 return false;
             }
-
-            // Check if each character in the segment is a valid hexadecimal digit
+         // Check if each character in the segment is a valid hexadecimal digit
             for (char c : segment.toCharArray()) {
                 if (!isHexDigit(c)) {
                     return false;
                 }
             }
         }
-
         // If all checks pass, the address is valid
         return true;
     }
-
-    // Hilfsmethode zur Überprüfung, ob ein Zeichen ein Hexadezimalzeichen ist
+    // Hilfsmethode zur Überprüfung, ob ein Zeichen ein Hexadezimalzeichen ist (||  = ODER)
     private boolean isHexDigit(char c) {
         return (c >= '0' && c <= '9') || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F');
     }
-	
-	
 }
