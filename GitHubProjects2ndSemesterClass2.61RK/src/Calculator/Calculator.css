@@ -1,34 +1,60 @@
 /* Styling for the main display text field */
 .text-field {
-    -fx-font-size: 24px;
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
     -fx-alignment: center-right;
     -fx-padding: 10px;
-    -fx-background-color: #f0f0f0;
-    -fx-text-fill: #777;
+    -fx-background-color: #1e1e2f; /* Dark background */
+    -fx-text-fill: #00ffcc;        /* Neon text color */
+    -fx-border-color: #00ffcc;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
 }
 
 /* Basic styling for calculator buttons */
 .button {
-    -fx-font-size: 30px;
-    -fx-background-color: #4CAF50; /* Green background */
-    -fx-text-fill: white;          /* White text */
-    -fx-background-radius: 8px;    /* Rounded corners */
-    -fx-border-color: #333;        /* Dark border */
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-background-color: #2e2e3f; /* Darker button background */
+    -fx-text-fill: #ffffff;         /* White text */
+    -fx-background-radius: 10px;   /* Rounded corners */
+    -fx-border-color: #444;        /* Subtle border */
     -fx-border-width: 1px;
     -fx-cursor: hand;              /* Pointer cursor */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 4, 0.2, 0, 2);
 }
 
 /* Styling for operation buttons (+, -, *, /, =) */
 .button.operation {
-    -fx-background-color: #FF5722; /* Orange background */
+    -fx-background-color: #ff9800; /* Vibrant orange background */
+    -fx-text-fill: #1e1e2f;        /* Dark text */
+    -fx-font-weight: bold;
+    -fx-border-color: #ffb74d;     /* Highlight border */
 }
 
 /* Styling for clear button (C) */
 .button.clear {
-    -fx-background-color: #f44336; /* Red background */
+    -fx-background-color: #d32f2f; /* Bright red background */
+    -fx-text-fill: #ffffff;        /* White text */
+    -fx-font-weight: bold;
+    -fx-border-color: #ff6659;     /* Highlight border */
 }
 
-/* Hover effect for all buttons */
+/* Styling for hover effects on all buttons */
 .button:hover {
-    -fx-opacity: 0.8; /* Slightly transparent on hover */
+    -fx-opacity: 0.9;                /* Slightly transparent on hover */
+    -fx-background-color: #3e3e4f; /* Slightly lighter on hover */
+}
+
+/* Styling for pressed buttons */
+.button:pressed {
+    -fx-background-color: #1c1c2a; /* Darker pressed state */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 6, 0.3, 0, 4);
+}
+
+/* Grid layout background */
+.grid-pane {
+    -fx-background-color: #121212; /* Deep black background */
+    -fx-padding: 15px;
+    -fx-border-radius: 10px;
 }

@@ -75,9 +75,8 @@ public class CalculatorView {
 		stage.setTitle("CalculatorRK2.61");
 		
 		// Set the window size
-        stage.setWidth(300);
-        stage.setHeight(300);
-
+		stage.setWidth(300);
+		stage.setHeight(400);
 	}
 
 	public void start() {
