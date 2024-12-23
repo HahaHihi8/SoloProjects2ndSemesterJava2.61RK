@@ -47,6 +47,8 @@ public class MineSweeperView {
 		
 		rightPane.getChildren().add(lblGameOver);
 		root.setRight(rightPane);
+		//VBOX hat keine aotmatische Verknüpfung zum CSS
+		rightPane.getStyleClass().add("vbox"); 
 		
 		root.setCenter(gameGrid);
 		
@@ -62,5 +64,17 @@ public class MineSweeperView {
 		stage.show(); //wird in der Main-Klasse aufgerufen
 		
 	}
-
+	
+	// 6. Erstellt  das Spielfeld
+	protected void newGame(int width, int height) {
+		gameGrid.getChildren().clear(); //löscht alte Elemente
+		buttons = new Button[height][width]; //height = Höhe / width = Spalte
+		for (int row= 1; row < height; row++) {
+			for (int col = 1; col < width; col++) {
+                Button btn = new Button();
+                buttons[row][col] = btn;
+                gameGrid.add(btn, col, row); // add-Funktion fordert zuerst Spalte und dann Zeile
+			}
+		}	
+	}
 }

@@ -1,0 +1,9 @@
+.vbox {
+	-fx-padding: 5px;
+	-fx-spacing: 5px;
+}
+
+.button {
+	-fx-mid-width: 30px;
+	-fx-mid-height: 30px;
+}
