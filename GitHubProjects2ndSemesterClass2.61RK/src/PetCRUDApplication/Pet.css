@@ -1,0 +1,69 @@
+/* General Layout */
+#dataEntry {
+    padding: 10px;
+    -fx-border-width: 2px;
+    -fx-border-style: dashed;
+    -fx-border-color: #FFA500; 
+    background-color: #FFF8DC; 
+    margin-bottom: 10px;
+}
+
+#controlArea {
+    padding: 10px;
+    background-color: #FFFAF0; 
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: #8B4513; 
+    margin-bottom: 10px;
+}
+
+#navigationArea {
+    padding: 10px;
+    background-color: #ADD8E6; 
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: #4682B4; /
+    margin-bottom: 10px;
+}
+
+#dataDisplay {
+    padding: 10px;
+    -fx-border-width: 2px;
+    -fx-border-style: dotted;
+    -fx-border-color: #32CD32;
+    background-color: #F5FFFA; 
+}
+
+/* Buttons */
+.button {
+    padding: 5px 10px;
+    font-size: 14px;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-border-color: #FFD700; 
+    background-color: #FFFACD;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: #FFA07A; 
+    color: white;
+}
+
+/* Labels */
+.label {
+    font-weight: bold;
+    color: #6A5ACD; 
+}
+
+/* List View */
+.list-view {
+    -fx-border-width: 2px;
+    -fx-border-style: dashed;
+    -fx-border-color: #FF4500; 
+    padding: 5px;
+    background-color: #FFE4B5; 
+    max-height: 150px;
+    overflow-y: auto;
+}

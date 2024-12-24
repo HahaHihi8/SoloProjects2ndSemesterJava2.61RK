@@ -52,10 +52,7 @@ public class Pet {
 		return ID;
 	}
 	
-	
-	
-	
-	
-	
-
+	public String toString() {
+	    return name + " (" + species + ", " + gender + ")";
+	}
 }
