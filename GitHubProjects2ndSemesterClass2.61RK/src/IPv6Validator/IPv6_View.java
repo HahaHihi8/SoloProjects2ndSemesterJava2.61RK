@@ -10,7 +10,6 @@ import javafx.stage.Stage;
 public class IPv6_View {
 	
 	 final private Stage stage;
-	    
 	    // GUI components
 	    protected TextField txtAddress;
 	    protected TextField txtPort;
@@ -19,7 +18,6 @@ public class IPv6_View {
 
 	    public IPv6_View(Stage stage) {
 	        this.stage = stage;
-	        
 	        // Set up the layout
 	        GridPane root = new GridPane();
 	        root.setVgap(10);
@@ -55,9 +53,7 @@ public class IPv6_View {
 	        stage.setScene(scene);
 	        stage.setTitle("IPv6 Address Validator");
 	    }
-
 	    public void start() {
 	        stage.show();
 	    }
-
 }

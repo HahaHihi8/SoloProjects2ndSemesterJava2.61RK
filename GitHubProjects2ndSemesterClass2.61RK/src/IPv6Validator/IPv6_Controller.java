@@ -16,10 +16,9 @@ public class IPv6_Controller {
         this.model = model;
         this.view = view;
         
-        // Add listeners and handlers
+     // Add listeners and handlers
         addListeners();
     }
-
     private void addListeners() {
         // Enable the validate button only if IPv6 field is not empty
         view.txtAddress.textProperty().addListener(new ChangeListener<String>() {
@@ -28,7 +27,6 @@ public class IPv6_Controller {
                 view.btnValidate.setDisable(newValue.trim().isEmpty());
             }
         });
-
         // Add action for validate button
         view.btnValidate.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -37,7 +35,6 @@ public class IPv6_Controller {
             }
         });
     }
-
     private void validateAddress() {
         String address = view.txtAddress.getText();
         boolean isValid = model.isValidIPv6(address);
