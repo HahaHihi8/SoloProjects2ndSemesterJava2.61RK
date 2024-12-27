@@ -5,13 +5,21 @@ For Prof. Dr. BR:
 The individual projects are individually saved in the following src folders:
 
 Project Name                                              src name
+
 Woche 2: Taschenrechner                              -    Calculator
+
 Woche 3: Pet-Beispiel erweitern                      -    PetCRUDApplication
+
 Wochen 4/5: Pet-Beispiel verwendet eine Datei        -    PetCRUDApplication
+
 Woche 7: Art Webshop                                 -    ArtWebshop
+
 Woche 9: ListTesting erweitern                       -     
+
 Woche 10: Eine neue Datenstruktur implementieren     -    
+
 Woche 12: jUnit Tests                                -    
+
 
 All project are sortet with their logical name in the src folder and can be individually run
 05.10.2024 / initial Set-up of this repo
