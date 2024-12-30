@@ -1,1 +1,3 @@
-a,DOG,MALE
+Max,CAT,MALE
+Alex,CAT,MALE
+Petra,DOG,FEMALE
