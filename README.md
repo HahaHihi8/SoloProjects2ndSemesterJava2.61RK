@@ -1,10 +1,11 @@
 # SoloProjects2ndSemesterJava2.61RK
 This project includes all tasks from my class WIBB 2.61 at FHNW 2024 
 
-For Prof. Dr. BR:
-The individual projects are individually saved in the following src folders:
 
-Project Name                                              src name
+For Prof. Dr. BR:
+The individual projects are individually saved in the following src packages / folders:
+
+Project / task name                                  -    src package name
 
 Woche 2: Taschenrechner                              -    Calculator
 
@@ -14,14 +15,16 @@ Wochen 4/5: Pet-Beispiel verwendet eine Datei        -    PetCRUDApplication
 
 Woche 7: Art Webshop                                 -    ArtWebshop
 
-Woche 9: ListTesting erweitern                       -     
+Woche 9: ListTesting erweitern                       -    ListTesting
 
-Woche 10: Eine neue Datenstruktur implementieren     -    
+Woche 10: Eine neue Datenstruktur implementieren     -    ListDataStructure
 
-Woche 12: jUnit Tests                                -    
+Woche 12: jUnit Tests                                -    IPv6Validator
 
 
-All project are sortet with their logical name in the src folder and can be individually run
+
+Timetable:
+
 05.10.2024 / initial Set-up of this repo
 
 25.10.2024 / upload working Calculator (src/calculator)
@@ -37,4 +40,8 @@ All project are sortet with their logical name in the src folder and can be indi
 23.11.2024 - 08.12.2024 break due to sickness and different class project "playfair" -- uploaded separately on the 08.12.2024
 
 27.12.2024 - after christmas, collection upload of school laptop projects
+
+31.12.2024 - upload last tasks
+
+January 2025 - final school examples and exam preparation
 
